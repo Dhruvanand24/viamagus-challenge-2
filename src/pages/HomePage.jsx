@@ -57,7 +57,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen items-center bg-[#CADCFC] p-4 relative">
+    <div className="flex flex-col max-w-screen min-h-screen items-center bg-[#CADCFC] p-4 relative">
       <h1 className="mt-2 text-4xl sm:text-6xl font-semibold text-[#00246B] mb-8 underline underline-offset-3 text-center">
         All Posts
       </h1>
