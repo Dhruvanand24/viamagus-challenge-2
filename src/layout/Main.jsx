@@ -4,7 +4,7 @@ import "./circles.scss"; // Import the SCSS file
 
 const Main = () => {
   return (
-    <div className="font-ED min-h-screen relative">
+    <div className="font-ED min-h-screen relative select-none">
       <div className="z-10">
         <Outlet />
       </div>
