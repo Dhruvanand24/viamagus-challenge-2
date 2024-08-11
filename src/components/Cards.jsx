@@ -7,7 +7,7 @@ const Cards = (props) => {
   return (
     <Link
       to={`/Description/${postId}`}
-      className="flex flex-col w-96 sm:max-w-screen-sm lg:max-w-96 rounded-md shadow-md overflow-clip z-20"
+      className="flex flex-col w-96 sm:w-80 md:w-80 sm:max-w-80 md:max-w-80 lg:max-w-96 rounded-md shadow-md overflow-clip z-20"
     >
       <div className="bg-[#00246B] flex text-center py-2 font-ED justify-center text-wrap">
         <h2 className="text-white">{title}</h2>
