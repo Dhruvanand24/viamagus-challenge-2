@@ -57,13 +57,13 @@ const HomePage = () => {
   };
 
   return (
-    <div className="flex flex-col max-w-screen min-h-screen items-center bg-[#CADCFC] p-4 relative">
-      <h1 className="mt-2 text-4xl sm:text-6xl font-semibold text-[#00246B] mb-8 underline underline-offset-3 text-center">
+    <div className="flex flex-col max-w-screen min-h-screen items-center bg-fuchsia-100 p-4 relative">
+      <h1 className="mt-2 text-4xl sm:text-6xl font-semibold text-fuchsia-950 mb-8  text-center">
         All Posts
       </h1>
       <Link to="/createPost">
-        <h1 className="p-2 text-center absolute top-4 right-4 rounded-md shadow-md bg-[#00246B] text-[#CADCFC] hover:text-white cursor-pointer">
-          Create post
+        <h1 className="p-2 px-4 font-bold text-center absolute top-4 right-4 rounded-md shadow-md bg-fuchsia-950 text-[#CADCFC] hover:text-white cursor-pointer transition-all hover:scale-110 ease-in-out">
+          Create post +
         </h1>
       </Link>
 
@@ -81,25 +81,25 @@ const HomePage = () => {
         <button
           onClick={handlePrevious}
           disabled={start === 0}
-          className="p-2 w-24 text-center bg-[#00246B] text-[#CADCFC] rounded hover:bg-[#001A52] transition-colors"
+          className="p-2 w-24 text-center bg-fuchsia-800 text-white hover:text-white rounded hover:bg-fuchsia-950 transition-colors ease-linear"
         >
           Previous
         </button>
         <button
           onClick={handleNext}
           disabled={posts.length < limit}
-          className="p-2 w-24 text-center bg-[#00246B] text-[#CADCFC] rounded hover:bg-[#001A52] transition-colors"
+          className="p-2 w-24 text-center bg-fuchsia-800 text-white hover:text-white rounded hover:bg-fuchsia-950 transition-all ease-in-out"
         >
           Next
         </button>
       </div>
       {loading && (
-        <p className="text-2xl absolute top-24 z-30 text-white ring-1 bg-[#001A52] text-wrap p-2">
+        <p className="text-2xl absolute top-24 z-30 text-white ring-1 bg-purple-950 text-wrap p-2">
           Loading...
         </p>
       )}
       {error && (
-        <p className="text-2xl absolute top-24 z-30 text-white ring-1 text-wrap bg-[#001A52] p-2">
+        <p className="text-2xl absolute top-24 z-30 text-white ring-1 text-wrap bg-purple-950 p-2">
           Error: {error}
         </p>
       )}

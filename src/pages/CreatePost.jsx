@@ -37,8 +37,8 @@ const CreatePost = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen items-center bg-[#CADCFC] p-4">
-      <h1 className="text-4xl font-semibold text-[#00246B] mb-8">
+    <div className="flex flex-col min-h-screen items-center bg-fuchsia-100 p-4">
+      <h1 className="text-4xl font-semibold text-fuchsia-950 mb-8">
         Create New Post
       </h1>
       <form
@@ -72,7 +72,7 @@ const CreatePost = () => {
         />
         <button
           type="submit"
-          className="p-2 bg-[#00246B] text-[#CADCFC] rounded hover:bg-[#001A52] transition-colors"
+          className="p-2 bg-fuchsia-950 text-[#CADCFC] rounded  transition-colors"
         >
           Submit
         </button>
