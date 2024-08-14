@@ -66,6 +66,11 @@ const HomePage = () => {
           Create post +
         </h1>
       </Link>
+      <Link to="/createPost">
+        <h1 className="p-2 flex lg:hidden px-4 font-bold text-center rounded-md shadow-md bg-fuchsia-950 text-[#CADCFC] hover:text-white cursor-pointer transition-all hover:scale-110 ease-in-out">
+          Create post +
+        </h1>
+      </Link>
 
       <div className="flex flex-wrap gap-8 justify-center p-4">
         {posts.map((post) => (
