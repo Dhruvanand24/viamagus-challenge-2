@@ -62,12 +62,12 @@ const HomePage = () => {
         All Posts
       </h1>
       <Link to="/createPost">
-        <h1 className="p-2 px-4 font-bold text-center absolute top-4 right-4 rounded-md shadow-md bg-fuchsia-950 text-[#CADCFC] hover:text-white cursor-pointer transition-all hover:scale-110 ease-in-out">
+        <h1 className="p-2 sm:hidden lg:flex px-4 font-bold text-center absolute top-4 right-4 rounded-md shadow-md bg-fuchsia-950 text-[#CADCFC] hover:text-white cursor-pointer transition-all hover:scale-110 ease-in-out">
           Create post +
         </h1>
       </Link>
 
-      <div className="flex flex-wrap gap-8 justify-center">
+      <div className="flex flex-wrap gap-8 justify-center p-4">
         {posts.map((post) => (
           <Cards
             key={post.id}
